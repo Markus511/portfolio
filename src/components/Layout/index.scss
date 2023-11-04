@@ -1,0 +1,29 @@
+.App {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/images/background.jpg');
+}
+
+.content {
+    width: 100%;
+    position: relative;
+    overflow-y: auto;
+
+}
+
+.container {
+    width: 100%;
+    will-change: contents;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    transform-style: preserve-3d;
+  
+}
+
+
+
+

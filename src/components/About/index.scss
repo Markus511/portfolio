@@ -1,0 +1,49 @@
+.about-page {
+  
+    .text {
+        position: absolute;
+        left: 10%;
+        padding-left: 10em;
+        padding-right: 10em;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40%;
+        max-height: 90%;
+        background: transparent;
+    }
+
+    h1 {
+        color: #ffffff;
+        font-size: 4em;
+        margin: 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 400;
+        opacity: 0;
+        animation: fadeInUp 1s 1s forwards;
+        animation-fill-mode: forwards;
+    }
+
+    h2 {
+        font-size: 2.5em;
+        color: #ffffff;
+        margin-top: 2em;
+        font-weight: 400;
+        letter-spacing: 2px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        opacity: 0;
+        animation: fadeInDown 1s 1s forwards;
+        animation-fill-mode: forwards;
+    }
+
+    @media (max-width: 768px) {
+    
+        h1 {
+          font-size: 2.5em;
+        }
+    
+        h2 {
+          font-size: 2em;
+        }
+    }
+
+}

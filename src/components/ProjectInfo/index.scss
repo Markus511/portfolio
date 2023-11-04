@@ -1,0 +1,62 @@
+.projectsInfo-page {
+    text-align: center;
+    color: white;
+
+    h1 {
+        font-size: 3em;
+    }
+    
+    h2 {
+        width: 50%;
+        letter-spacing: 2px;
+        margin: auto;
+        text-align: center;
+        height: auto;
+        font-size: 1.5em;
+
+    }
+
+    
+
+    .demo-container {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        margin-top: 10em;
+        padding: 2em;
+        width: 70%;
+        background-color: black;
+
+        img {
+            width: 600px;
+            height: 400px;
+            margin-top: 2em;
+            margin-left: 5em;
+    
+        }
+      
+        p {
+           text-align: left;
+           letter-spacing: 2px;
+           font-size: 2em;
+        }
+
+    }
+
+    @media screen and (max-width: 568px) {
+        .projectsInfo-page .demo-container {
+            background-color: aqua;
+        }
+
+        .projectsInfo-page .demo-container img {
+            width: 500px;
+        }
+    }
+}
+
+ 
+
+  
+
+
+
