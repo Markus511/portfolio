@@ -45,9 +45,7 @@
         
     
   
-        &:hover {
-            border: 2px solid rgb(0, 12, 149);
-        }
+      
 
     }
 
@@ -59,6 +57,9 @@
         .card {
             width: 25em;
         }
+        h1 {
+            font-size: 3em;
+        }
     }
 
     @media (max-width: 300px) {
@@ -66,9 +67,7 @@
         .card {
             width: 20em;
         }
-        h1 {
-            font-size: 3em;
-        }
+    
     }
         .pic-container {
             display: flex;
@@ -92,11 +91,15 @@
             display: flex;
             flex-direction: column;
             color: #ffffff;
-        
+
+       
             .tech-container { 
                 text-align: center;
                 margin-bottom: 1em;
-            }
+                display: flex;
+                flex-wrap: wrap; 
+                justify-content: center; 
+            
             .tech-item {
                 background: rgb(255, 255, 255);
                 display: inline;
@@ -107,18 +110,21 @@
                 font-weight: bold;
             }
         }
+        }
 
             .link {
                 background: rgb(0, 0, 0);
                 border-radius: 5px;
                 border: 1px solid #ffffff;
                 padding: 10px;
-                width: 50%;
+                width: 40%;
                 margin: auto;
-                margin-top: 10px;
+                margin-top: 20px;
                 color: #ffffff;
                 font-weight: bold;
                 font-size: 12px;
+
+                
 
                 &:hover {
                     cursor: pointer;

@@ -1,6 +1,7 @@
 .navbar {
     
-    background-color: #da0303; 
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    background-color: black; 
     position: fixed;
     top: 0;
     left: 0;
@@ -8,20 +9,7 @@
     height: 100vh;
     z-index: 3;
     overflow-y: auto;
-   
 
-
-    ul {
-        position: absolute;
-        bottom: 20px;
-        width: 100%;
-        display: block;
-        padding: 0;
-        list-style: none;
-        text-align: center;
-        margin: 0;
-    
-}
 }
 
 .logo {

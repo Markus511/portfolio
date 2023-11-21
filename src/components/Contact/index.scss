@@ -1,18 +1,22 @@
 .contact-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     
     .contact-form {
-        position: absolute;
-        left: 20%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40%;
-        max-height: 90%;
-        background: transparent;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-height: 90%;
+      background: transparent;
 
         p {
+            width: 50%;
             text-align: left;
             color: white;
-            font-size: 3em;
+            font-size: 2.5em;
             opacity: 0;
             animation: fadeInUp 1s 1s forwards;
             animation-fill-mode: forwards;
@@ -74,16 +78,15 @@
             text-transform: uppercase;
             float: left;
             text-align: center;
+            
+            &:hover {
+              cursor: pointer;
+          }
           }
 
     }
 
-    
-    @media (max-width: 768px) {
-      p {
-        font-size: 1.5em;
-      }
-    }
+  
 
     @media (max-width: 600px) {
       ul {
@@ -93,7 +96,7 @@
 
     @media (max-width: 390px) {
       p {
-        font-size: 1.3em;
+        font-size: 1.5em;
       }
 
       ul {
@@ -104,7 +107,7 @@
     @media (max-width: 340px) {
   
       ul {
-        width: 20em;
+        width: 15em;
       }
     }
 

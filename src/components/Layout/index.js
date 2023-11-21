@@ -1,7 +1,6 @@
 import { Outlet } from 'react-router-dom'
 import LeftSide from '../LeftSide';
 import './index.scss';
-import bg from '../../assets/images/background.jpg';
 
 
 const Layout = () => {
