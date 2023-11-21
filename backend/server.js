@@ -10,7 +10,6 @@ var cors = function (req, res, next)
     next();
 }
 
-
 const app = express();
 
 app.use(cors);
