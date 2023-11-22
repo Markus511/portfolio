@@ -11,7 +11,7 @@ const About = () => {
         </div>
         <div className="portfolio-info">
         <p>View the code of this portfolio</p>
-        <button className="btn">To Github</button> 
+        <button className="btn" onClick={() => window.open('https://github.com/Markus511/portfolio', '_blank')}>To Github</button> 
         </div>
     </div>
     );
