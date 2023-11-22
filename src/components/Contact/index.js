@@ -21,7 +21,7 @@ const Contact = () => {
 
     try {
       console.log('handleEmail');
-      const response = await fetch('http://localhost:5000/api/contact', {
+      const response = await fetch('https://portfolio-fd2u.onrender.com/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
