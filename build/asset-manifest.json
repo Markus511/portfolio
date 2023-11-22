@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.14e88cba.css",
+    "main.js": "/static/js/main.38daf2c2.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/demo_converted.gif": "/static/media/demo_converted.90a91a0c47ec8ea4086c.gif",
+    "static/media/listApp_demo.gif": "/static/media/listApp_demo.bd4c9aebde94d20dd1ea.gif",
+    "static/media/phone.jpg": "/static/media/phone.544b49250a67ad39ea0b.jpg",
+    "static/media/web.jpg": "/static/media/web.f0854b58c296368523e5.jpg",
+    "static/media/Profiilikuva.png": "/static/media/Profiilikuva.97a43a1ef69eaad3cb83.png",
+    "static/media/old-books.jpg": "/static/media/old-books.a3bb11f3b304be64722c.jpg",
+    "index.html": "/index.html",
+    "main.14e88cba.css.map": "/static/css/main.14e88cba.css.map",
+    "main.38daf2c2.js.map": "/static/js/main.38daf2c2.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.14e88cba.css",
+    "static/js/main.38daf2c2.js"
+  ]
+}
