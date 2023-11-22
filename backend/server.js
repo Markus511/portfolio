@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const path = require('path');
 
 
 var cors = function (req, res, next)
@@ -11,14 +12,23 @@ var cors = function (req, res, next)
 }
 
 const app = express();
-
 app.use(cors);
-
 app.use(bodyParser.json());
 
 // importataan reitit
 const mailRoutes = require('./routes/mailRoutes');
 app.use(mailRoutes);
+
+
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'build')));
+
+// The "catchall" handler: for any request that doesn't
+// match the ones above, send back React's index.html file.
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
 
 const PORT = 5000;
 
