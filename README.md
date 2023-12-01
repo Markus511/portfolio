@@ -1,77 +1,50 @@
+# **Dokumentaatio**
 
-# Getting Started with Create React App
+## **Frontend** src/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### index.js
 
-## Available Scripts
+- Määritellään sovelluksen juurielementti (root)
+- Renderöidään pääkomponentti App
 
-In the project directory, you can run:
+### App.js
 
-### `npm start`
+- Käytetään react-router-dom-kirjastoa reititykseen
+- Määritellään reitit
+  
+### Layout/index.js
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Käytetään react-router-dom-kirjaston Outlet-komponenttia, johon App.js-tiedoston reitit renderöidään.
+LeftSide-komponenttiin renderöidään sivun navigaatiopalkki.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## components/
+- About
+- Contact
+- Projects
+- Projects/BookArchiveProject
+- Projects/ListAppProject
+- Layout
+- LeftSide
+  
+Jokaiselle kansiolle on oma index.js ja index.scss -tiedosto eli index.js sisältää React-komponentin JSX-syntaksilla ja index.scss -tiedosto sisältää tyylimäärittelyn kyseiselle komponentille.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## **Backend** backend/
 
-### `npm run build`
+### server.js
+- Express-sovelluksen päämoduuli, joka käynnistää palvelimen ja määrittelee tarvittavat middlewaret ja reitit
+  
+## controllers/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### mailController.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Sisältää sähköpostin lähetykseen liittyvän logiikan
+- Käytetään Nodemailer-kirjastoa sähköpostin lähetykseen
+- Luodaan Nodemailer-kuljetin, jossa määritellään SMTP-palvelimen osoite, turvallinen portti, SSL-yhteys ja autentikointi Gmail-tilille pääsyyn
+- Säilytetään sähköpostiosoitetta ja salasanaa turvallisesti ympäristömuuttujissa (tiedot lisätään .gitignoreen)
+  
+## routes/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# portfolio
->>>>>>> 76d418e98aa17742de2ee9ca46866a52358cb93b
-=======
-# portfolio
->>>>>>> 0bdd90cff58db07c512632e48a0057569713799c
+### mailRoutes.js
+- Määrittelee Express-reitit ja käyttää mailController-tiedostosta tuotua logiikkaa
+- router.route('/api/contact').post(ctrl.fetch) määritellään reitti ja POST-pyyntö mailControllerin fetch-metodiin.
