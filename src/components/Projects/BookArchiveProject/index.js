@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+
 import demo from '../../../assets/images/demo_converted.gif';
 import './index.scss';
 import { useState } from "react";
