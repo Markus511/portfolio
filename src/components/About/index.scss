@@ -25,9 +25,6 @@
         margin: 0;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-weight: 400;
-        opacity: 0;
-        animation: fadeInUp 1s 1s forwards;
-        animation-fill-mode: forwards;
         background-color: #333;
         padding: 10px;
         border-radius: 10px;
@@ -41,16 +38,10 @@
         font-weight: 400;
         letter-spacing: 2px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        opacity: 0;
-        animation: fadeInDown 1s 1s forwards;
-        animation-fill-mode: forwards;
-
     }
 
     .portfolio-info {
-        opacity: 0;
-        animation: fadeInUp 1s 1s forwards;
-        animation-fill-mode: forwards;
+       
 
         p {
             font-size: 2em;

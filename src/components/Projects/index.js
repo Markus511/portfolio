@@ -1,7 +1,7 @@
 import './index.scss';
-import books from '../../assets/images/old-books.jpg';
-import web from '../../assets/images/web.jpg';
-import phone from '../../assets/images/phone.jpg';
+import books from '../../assets/images/old-books.WebP';
+import web from '../../assets/images/web.WebP';
+import phone from '../../assets/images/phone.WebP';
 import { useNavigate } from 'react-router-dom';
 
 const Projects = () => {

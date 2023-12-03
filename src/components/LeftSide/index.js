@@ -1,6 +1,6 @@
 import './index.scss';
 import { Link, NavLink } from 'react-router-dom';
-import kuva from '../../assets/images/Profiilikuva.png'
+import kuva from '../../assets/images/Profiilikuva.WebP'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faFile, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
