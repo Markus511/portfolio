@@ -4,6 +4,8 @@ import { useState } from 'react';
 
 const Contact = () => {
 
+  const [isLoading, setIsLoading] = useState(false);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,6 +20,8 @@ const Contact = () => {
       alert('Kaikki kentät ovat pakollisia');
       return;
     }
+
+    setIsLoading(true);
 
     try {
       console.log('handleEmail');
@@ -34,9 +38,13 @@ const Contact = () => {
     
     // Tyhjennä kentät ja näytä alertissa viesti
     setFormData({ name: '', email: '', message: '' });
+    setIsLoading(false);
     alert(data.message);
+
+
      
     } catch (error) {
+      setIsLoading(false);
       console.error('Virhe lähetyksessä:', error);
     }
   };
@@ -75,7 +83,9 @@ const Contact = () => {
       />
                 </li>
                 <li>
-                  <input type="submit" className="send-button" value="SEND" />
+                  <button type="submit" className="send-button" disabled={isLoading}>
+                    {isLoading ? 'Sending...' : 'Send'}
+                  </button>
                 </li>
               </ul>
             </form>
